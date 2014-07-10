@@ -1,0 +1,17 @@
+.binding ul {
+	width: 80%;
+}
+
+.binding h2 {
+	color: #35aecc;
+	text-shadow: 2px 2px 5px #AC9C9C;
+}
+
+.binding img {
+	box-shadow: 10px 5px 5px #AC9C9C;
+}
+
+.binding cite {
+	font-size: 50%;
+	font-style: italic;
+}

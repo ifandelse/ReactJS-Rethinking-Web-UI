@@ -1,0 +1,42 @@
+{
+  "name": "ReactJS-Rethinking-Web-UI",
+  "version": "0.1.0",
+  "description": "A ReactJS presentation, written in ReactJS.",
+  "homepage": "https://github.com/ifandelse/ReactJS-Rethinking-Web-UI",
+  "author": "Jim Cowart <jim@ifandelse.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ifandelse/ReactJS-Rethinking-Web-UI.git"
+  },
+  "bugs": {
+    "email": "PleaseJustUseTheIssuesPage@github.com",
+    "url": "https://github.com/ifandelse/react-budget-example/issues"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "dependents": "^1.0.1",
+    "express": "~4.1.1",
+    "gulp": "~3.6.2",
+    "gulp-cleanhtml": "0.0.2",
+    "gulp-html-replace": "~1.1.0",
+    "gulp-livereload": "~1.3.1",
+    "gulp-minify-css": "~0.3.1",
+    "gulp-react": "~0.3.3",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-util": "~2.2.14",
+    "open": "0.0.5"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp server"
+  }
+}

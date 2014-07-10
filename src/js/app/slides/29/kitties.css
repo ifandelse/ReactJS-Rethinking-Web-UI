@@ -1,0 +1,12 @@
+.kitty-grid {
+	font-size: 0;
+	line-height: 0;
+}
+
+.kitty-grid img {
+	padding: 0 3px 3px 0;
+}
+
+.kitties button {
+	font-size: 60%;
+}

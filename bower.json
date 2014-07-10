@@ -1,0 +1,30 @@
+{
+  "name": "ReactJS-Rethinking-Web-UI",
+  "version": "0.1.0",
+  "description": "A ReactJS presentation, written in ReactJS.",
+  "homepage": "https://github.com/ifandelse/ReactJS-Rethinking-Web-UI",
+  "author": "Jim Cowart <jim@ifandelse.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ifandelse/ReactJS-Rethinking-Web-UI.git"
+  },
+  "dependencies": {
+    "jquery": "1.11.1",
+    "requirejs": "~2.1.14",
+    "postal.js": "~0.10.0",
+    "react": "~0.10.0",
+    "react-bootstrap": "~0.10.2",
+    "bootstrap": "~3.1.1",
+    "jsx-requirejs-plugin": "~0.2.1",
+    "requirejs-text": "~2.0.12",
+    "font-awesome": "~4.1.0",
+    "machina": "~0.3.6",
+    "mousetrap": "~1.4.6",
+    "react.animate": "*",
+    "require-css": "~0.1.4",
+    "requirejs-plugins": "~1.0.2",
+    "backbone": "~1.1.2",
+    "postal.request-response": "~0.1.2"
+  },
+  "devDependencies": {}
+}

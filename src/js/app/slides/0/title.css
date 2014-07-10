@@ -1,0 +1,19 @@
+.title h1 {
+	font-size: 300%;
+}
+
+.title h3 {
+	font-size: 175%;
+	color: #35aecc;
+	font-style: italic;	
+	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+}
+
+.title img {
+	width:10em;
+	box-shadow: 10px 5px 5px #AC9C9C;
+}
+
+.title .jumbotron {
+	text-align: center;
+}

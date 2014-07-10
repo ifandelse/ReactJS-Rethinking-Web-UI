@@ -1,0 +1,12 @@
+.kitteh-grid img {
+	min-width: 800px;
+	box-shadow: 10px 5px 5px #AC9C9C;
+	overflow: scroll;
+}
+
+.kitteh-grid .scroller {
+	overflow: scroll;
+	height: 450px;
+	border-radius: 5px;
+	border: 1pt solid dimgray;
+}

@@ -1,0 +1,10 @@
+.binding ul {
+	width: 80%;
+}
+
+.binding p {
+	width: 55%;
+	margin: 1% auto 2% auto;
+	color: #A1314F;
+	text-shadow: rgb(224, 224, 224) 1px 1px 5px silver;
+}

@@ -1,0 +1,24 @@
+.appeal {
+	margin-top: 100px;
+}
+
+.appeal {
+	text-align:center;
+	width:80%;
+	margin: 5% auto 0 auto;
+}
+
+.appeal img {
+	height: 250px;
+	float: left;
+	vertical-align: middle;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.appeal .quote {
+	font-size: 140%;
+	font-style: italic;
+	padding: 3% 0 0 3%;
+}
