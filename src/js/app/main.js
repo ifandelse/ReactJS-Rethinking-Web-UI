@@ -14,7 +14,6 @@ require.config( {
         mousetrap: "js/lib/mousetrap/mousetrap",
         d3: "js/lib/d3/d3",
         "react.animate": "js/lib/react.animate/react.animate",
-        showdown: "js/lib/showdown/showdown.min",
         markdown: "js/lib/markdownjs/markdown",
         titledslide: "js/app/components/TitledSlide",
         markdownslide: "js/app/components/MarkdownSlide",

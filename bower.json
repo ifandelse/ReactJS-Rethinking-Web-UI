@@ -24,7 +24,10 @@
     "require-css": "~0.1.4",
     "requirejs-plugins": "~1.0.2",
     "backbone": "~1.1.2",
-    "postal.request-response": "~0.1.2"
+    "postal.request-response": "~0.1.2",
+    "lodash": "~2.4.1",
+    "underscore": "~1.6.0",
+    "d3": "~3.4.10"
   },
   "devDependencies": {}
 }
