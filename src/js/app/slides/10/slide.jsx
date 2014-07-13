@@ -1,17 +1,21 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!markdownslide",
-    "text!./slide.md",
-    "css!./dataBinding"
-], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    "jsx!titledslide"
+], function(React, TitledSlide) {
+    var Slide = React.createClass({
         render: function() {
-            return <MarkdownSlide classes="binding" title="Abstracting for Precision" markdown={md}>
-            	<h2>Data Binding</h2>
-            	<img src="js/app/slides/10/databinding.png" />
-				<div><cite>http://fluxxor.com/images/mvc-simple.png</cite></div>
-            </MarkdownSlide>;
+            return <TitledSlide classes="binding" title="Abstracting for Precision">
+            	<h2 className="slide-headline-alt">Data Binding</h2>
+            	<img className="slide-image" src="js/app/slides/10/databinding.png" />
+				<div><aside>http://fluxxor.com/images/mvc-simple.png</aside></div>
+                <ul className="top-breathing-room spacey-lines">
+                    <li>Used to shorten the conceptual gap (between UI &amp; Model)</li>
+                    <li>Often called Key/Value Observation (Observer Pattern)</li>
+                    <li>Used by Ember, Angular, Knockout &amp; many others</li>
+                </ul>
+            </TitledSlide>;
        }
     });
+    return Slide;
 });

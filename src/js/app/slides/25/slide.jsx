@@ -2,14 +2,14 @@
 define([
     "react",
     "jsx!titledslide",
-    "css!./warmFuzzy.css"
+    "css!./warmFuzzy"
 ], function(React, TitledSlide) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <TitledSlide classes="warm-fuzzy" title="But Now...Warm Fuzzies">
-                <div className="content">
-                    <img src="js/app/slides/25/warmfuzzy.jpg" />
-                    <div className="list">
+                <div className="media top-breathing-room">
+                    <img className="slide-image" src="js/app/slides/25/warmfuzzy.jpg" />
+                    <div className="bd">
                         <ul>
                             <li>Familiar Markup Paradigm</li>
                             <li>Powerful JavaScript support</li>
@@ -20,4 +20,5 @@ define([
             </TitledSlide>;
        }
     });
+    return Slide;
 });

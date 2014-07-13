@@ -1,10 +1,9 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide",
-    "css!./placeKittenJsx"
-], function(React, TitledSlide, md) {
-    return React.createClass({
+    "jsx!titledslide"
+], function(React, TitledSlide) {
+    var Slide = React.createClass({
         getInitialState: function() {
             return {
                 src: "js/app/slides/22/placeKitten2.png"
@@ -19,8 +18,9 @@ define([
 
         render: function() {
             return <TitledSlide classes="place-kitten-jsx" title="React Component – JSX">
-                <img src={ this.state.src } onClick={ this.robinSez } />
+                <img className="slide-image slide-image-fill" src={ this.state.src } onClick={ this.robinSez } />
             </TitledSlide>;
        }
     });
+    return Slide;
 });

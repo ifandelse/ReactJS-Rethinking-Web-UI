@@ -2,12 +2,12 @@
 define([
     "react",
     "jsx!markdownslide",
-    "text!./whatif.md",
-    "css!./whatif"
+    "text!./whatif.md"
 ], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <MarkdownSlide classes="whatif" title="What If..." markdown={md} />;
        }
     });
+    return Slide;
 });

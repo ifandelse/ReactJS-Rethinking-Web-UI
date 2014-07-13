@@ -1,13 +1,27 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!markdownslide",
-    "text!./seenWhat.md",
-    "css!./seenWhat"
-], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    "jsx!titledslide"
+], function(React, TitledSlide) {
+
+    var Slide = React.createClass({
+
         render: function() {
-            return <MarkdownSlide classes="see-what" title="So - What Have We Seen?" markdown={md} />;
+            var h1style = {
+                fontSize: "270%",
+                lineHeight: "250%"
+            };
+            var containerStyle = {
+                marginTop: "10%",
+                marginLeft: "5%"
+            }
+
+            return <TitledSlide classes="storytime" title="">
+                    <div style={containerStyle}>
+                        <h1 style={h1style}>Sadly, an Example<br />Without Kitties</h1>
+                    </div>
+            </TitledSlide>;
        }
     });
+    return Slide;
 });

@@ -1,15 +1,15 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide",
-    "css!./jsxReaction"
+    "jsx!titledslide"
 ], function(React, TitledSlide) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <TitledSlide classes="jsx-reaction" title="If You're Like Me">
-            		<h2>This was your initial reaction to seeing JSX</h2>
-                    <img src="js/app/slides/24/impliedfacepalm.jpg" />
+            		<h2 className="slide-headline-alt">This was your initial reaction to seeing JSX</h2>
+                    <img className="slide-image" src="js/app/slides/24/impliedfacepalm.jpg" />
             </TitledSlide>;
        }
     });
+    return Slide;
 });

@@ -8,7 +8,7 @@ define([
 
 	var channel = postal.channel("kitty");
 
-  return React.createClass({
+  var KittehRow = React.createClass({
     
     mixins: [React.Animate],
 
@@ -48,4 +48,5 @@ define([
 			</div>;	
 		}
 	});
+  return KittehRow;
 });

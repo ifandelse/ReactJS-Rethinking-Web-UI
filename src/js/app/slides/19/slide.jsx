@@ -2,12 +2,12 @@
 define([
     "react",
     "jsx!markdownslide",
-    "text!./reactOverview3.md",
-    "css!./reactOverview3"
+    "text!./reactOverview3.md"
 ], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <MarkdownSlide classes="react-overview3" title="ReactJS Rendering" markdown={md} />;
        }
     });
+    return Slide;
 });

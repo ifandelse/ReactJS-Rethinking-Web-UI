@@ -1,16 +1,16 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide",
-    "css!./kittehGrid"
+    "jsx!titledslide"
 ], function(React, TitledSlide) {
-    return React.createClass({
+    var Slide =  React.createClass({
         render: function() {
-            return <TitledSlide classes="kitteh-grid" title="KittehGrid">
+            return <TitledSlide title="KittehGrid">
                 <div className="scroller">
-            	   <img src="js/app/slides/33/KittehGrid.png" />
+            	   <img className="slide-image slide-image-fill slide-image-scrollable" src="js/app/slides/33/KittehGrid.png" />
                 </div>
             </TitledSlide>;
        }
     });
+    return Slide;
 });

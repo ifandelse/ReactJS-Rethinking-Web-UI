@@ -2,12 +2,12 @@
 define([
     "react",
     "jsx!markdownslide",
-    "text!./soc.md",
-    "css!./soc"
+    "text!./soc.md"
 ], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <MarkdownSlide classes="soc" title="Separation of Concerns" markdown={md} />;
        }
     });
+    return Slide;
 });

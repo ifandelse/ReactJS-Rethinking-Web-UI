@@ -2,12 +2,12 @@
 define([
     "react",
     "jsx!markdownslide",
-    "text!./buildingComponents.md",
-    "css!./buildingComponents"
+    "text!./buildingComponents.md"
 ], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
-            return <MarkdownSlide classes="building-comp" title="Building Components" markdown={md} />;
+            return <MarkdownSlide classes="building-comp" title="Building Components: Options" markdown={md} />;
        }
     });
+    return Slide;
 });

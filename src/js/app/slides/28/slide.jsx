@@ -4,12 +4,12 @@ define([
     "jsx!titledslide"
 ], function(React, TitledSlide) {
 
-    return React.createClass({
+    var Slide = React.createClass({
 
         render: function() {
             var h1style = {
                 fontSize: "270%",
-                lineHeight: "250%"
+                lineHeight: "150%"
             };
             var containerStyle = {
                 marginTop: "10%",
@@ -23,4 +23,5 @@ define([
             </TitledSlide>;
        }
     });
+    return Slide;
 });

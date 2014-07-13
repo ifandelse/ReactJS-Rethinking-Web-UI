@@ -1,18 +1,20 @@
 /** @jsx React.DOM */
 define([
     "react",
+    "jsx!titledslide",
     "css!./appeal1.css"
-], function(React) {
-    return React.createClass({
+], function(React, TitledSlide) {
+    var Slide = React.createClass({
         render: function() {
-            return <div className="appeal fill">
-                <div>
-                    <img src="images/Dijkstra.jpg" />
-                    <div className="quote">
-                        “The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.”<br />– E Dijkstra
+            return <TitledSlide classes="appeal1">
+                <div className="media">
+                    <img className="slide-image appeal-img" src="images/Dijkstra.jpg" />  
+                    <div className="bd quote quote-dijkstra">
+                        “The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.” – Dijkstra
                     </div>
                 </div>
-            </div>;
+            </TitledSlide>;
        }
     });
+    return Slide;
 });

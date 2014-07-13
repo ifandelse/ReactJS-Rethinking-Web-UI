@@ -3,7 +3,7 @@ define([
     "react",
     "jsx!titledslide"
 ], function(React, TitledSlide) {
-    return React.createClass({
+    var Slide = React.createClass({
     	getInitialState: function() {
     		return {
     			imgSrc: "images/clientstate1.jpg"
@@ -16,8 +16,10 @@ define([
         		self.setState({ imgSrc: "images/clientstate2.jpg" });
         	}, 3000);
             return <TitledSlide classes="storytime" title="The State We're In">
-                    <img src={this.state.imgSrc} />
+                    <img className="slide-image slide-image-fill" src={this.state.imgSrc} />
             </TitledSlide>;
        }
     });
+
+    return Slide;
 });

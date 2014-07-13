@@ -9,7 +9,7 @@ define([
 
 	var channel = postal.channel("kitty");
 
-  return React.createClass({
+  var KittehGrid = React.createClass({
 
   	componentWillMount: function() {
   		this.updateWithGeneratedState();
@@ -44,11 +44,12 @@ define([
     									key={ idx }
     									widths={ this.state.rows[idx] }
     									height={ height }
-    									maxWidth={ this.props.width }
+    									maxWidth={ this.props.width + 20 }
     							 />
 					}.bind(this))
 				}
 			</div>;	
 		}
 	});
+  return KittehGrid;
 });

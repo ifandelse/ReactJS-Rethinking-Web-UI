@@ -114,7 +114,7 @@ define([
 			require(["jsx!js/app/slides/" + self.currentPos + "/slide"], function(Slide){
 				React.renderComponent(
 					Slide(),
-					document.getElementById("main")
+					document.getElementById("presentation")
 				);
 			}, function (err) {
 				self.handle("oopsGoBack", self.prevPos);

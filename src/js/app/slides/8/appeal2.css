@@ -1,14 +1,14 @@
-.appeal2 .quote {
-	font-size: 150%;
-	font-style: italic;
+.appeal2 .quote-dijkstra2 {
 	display: block;
 	position: relative;
 	text-align: justify;
+	font-size: .95em;
 	padding: 3%;
-	line-height: 145%;
+	font-style: italic;
+	line-height: 175%;
 }
 
-.appeal2 .quote::after {
+.appeal2 .quote-dijkstra2::after {
 	content: "";
 	background: url(/images/Dijkstra5.jpeg);
 	opacity: 0.10;
@@ -22,7 +22,6 @@
 	background-size: cover;
 }
 
-.appeal2 .quote em {
+.appeal2 .quote-dijkstra2 em {
 	font-weight: bold;
-	text-decoration: underline;
 }

@@ -1,25 +1,7 @@
-.warm-fuzzy {
-	text-align:center;
-	width:80%;
-	margin: 0 auto 0 auto;
-}
-
-.warm-fuzzy .content {
+.warm-fuzzy .slide-children {
 	margin-top:5%;
 }
 
-.warm-fuzzy img {
-	height: 250px;
-	float: left;
-	vertical-align: middle;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.warm-fuzzy .list {
-	font-size: 120%;
-	font-style: italic;
-	padding: 5% 0 0 3%;
-	margin-left: 18%;
+.warm-fuzzy .bd {
+	margin-top:4%;
 }

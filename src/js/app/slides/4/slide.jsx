@@ -3,11 +3,12 @@ define([
     "react",
     "jsx!titledslide"
 ], function(React, TitledSlide) {
-    return React.createClass({
+    var Slide= React.createClass({
         render: function() {
-            return <TitledSlide classes="storytime" title="Were precise enough for">
-                    <img src="images/YahooWayback.png" />
+            return <TitledSlide classes="wayback" title="Were precise enough for">
+                    <img className="slide-image" src="images/YahooWayback.png" />
             </TitledSlide>;
        }
     });
+    return Slide;
 });

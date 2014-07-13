@@ -2,18 +2,19 @@
 define([
     "react"
 ], function(React) {
-    return React.createClass({
+    var TitledSlide = React.createClass({
         render: function() {
-            var classes = ["slide", "fill"];
+            var classes = ["slide"];
             if(this.props.classes && this.props.classes.length) { 
                 classes = classes.concat(this.props.classes.split(" "));
             }
             return <div className={classes.join(" ")}> 
                 <div>
-                    <h1>{this.props.title}</h1>
+                    <h1 className="slide-title">{this.props.title}</h1>
                 </div>
-                <div> { this.props.children }</div>
+                <div className="slide-children"> { this.props.children }</div>
             </div>;
        }
     });
+    return TitledSlide;
 });

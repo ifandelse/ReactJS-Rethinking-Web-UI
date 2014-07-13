@@ -2,12 +2,12 @@
 define([
     "react",
     "jsx!markdownslide",
-    "text!./reactOverview.md",
-    "css!./reactOverview"
+    "text!./reactOverview.md"
 ], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <MarkdownSlide classes="react-overview" title="ReactJS Overview" markdown={md} />;
        }
     });
+    return Slide;
 });

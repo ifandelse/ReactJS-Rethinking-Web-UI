@@ -1,13 +1,18 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!markdownslide",
-    "text!./events.md",
-    "css!./events"
-], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    "jsx!./SmartForm",
+    "./fakeDataSrc",
+    "css!./form-example"
+], function(React, SmartForm, fakeDataSrc) {
+    var Slide = React.createClass({
+
         render: function() {
-            return <MarkdownSlide classes="events" title="ReactJS &amp; Events" markdown={md} />;
-       }
+            return <div className="form-example">
+                <h2 className="slide-title">Form + Overlay Example</h2>
+                <SmartForm channel="form-example"/>
+            </div>;
+        }
     });
+    return Slide;
 });

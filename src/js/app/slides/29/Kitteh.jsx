@@ -7,7 +7,7 @@ define([
 		return "http://placekitten.com/" + w + "/" + h;
 	}
 
-    return React.createClass({
+    var Kitteh = React.createClass({
 		render: function() {
 			var url = getUrl(this.props.width, this.props.height);
 			return <img src={ url }
@@ -16,4 +16,5 @@ define([
 						className={ this.props.className } />;   
 		}
 	});
+	return Kitteh;
 });

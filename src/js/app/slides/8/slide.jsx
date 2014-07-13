@@ -3,11 +3,11 @@ define([
     "react",
     "css!./appeal2"
 ], function(React) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <div className="appeal2 fill">
                 <div>
-                    <div className="quote">
+                    <div className="quote-dijkstra2">
                         “Our intellectual powers are rather geared to master static relations
                         and our powers to visualize processes evolving in time are relatively
                         poorly developed. For that reason we should do (as wise programmers aware
@@ -20,4 +20,6 @@ define([
             </div>;
        }
     });
+
+    return Slide;
 });

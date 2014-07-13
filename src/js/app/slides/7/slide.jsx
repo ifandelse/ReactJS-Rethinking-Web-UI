@@ -5,7 +5,7 @@ define([
     "underscore"
 ], function(React, TitledSlide, _) {
 
-    return React.createClass({
+    var Slide = React.createClass({
         getInitialState: function(){
             var imgStyle = {
                 maxHeight: "100px",
@@ -85,7 +85,7 @@ define([
         render: function() {
             var h1style = {
                 fontSize: "270%",
-                lineHeight: "250%"
+                lineHeight: "200%"
             };
             var descStyle = {
                 fontSize: "270%",
@@ -102,7 +102,7 @@ define([
 
             return <TitledSlide classes="storytime" title="">
                     <div style={containerStyle}>
-                        <h1 style={h1style}>State Is The</h1>
+                        <h1 style={h1style}><span className="slide-headline-alt">Mutable</span> State Is The</h1>
                         <div style={descStyle}>
                             {this.state.descriptions[this.state.descriptionIndex]}
                         </div>
@@ -110,4 +110,5 @@ define([
             </TitledSlide>;
        }
     });
+    return Slide;
 });

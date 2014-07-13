@@ -1,13 +1,16 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!markdownslide",
-    "text!./flux2.md",
-    "css!./flux2"
-], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    "jsx!titledslide"
+], function(React, TitledSlide) {
+    var Slide = React.createClass({
         render: function() {
-            return <MarkdownSlide classes="flux2" title="Flux" markdown={md} />;
+            return <TitledSlide classes="overlay" title="Overlay Component">
+                <div className="scroller">
+            	   <img className="slide-image slide-image-fill slide-image-scrollable" src="js/app/slides/39/Overlay.png" />
+                </div>
+            </TitledSlide>;
        }
     });
+    return Slide;
 });

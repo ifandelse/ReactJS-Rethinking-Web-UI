@@ -1,14 +1,14 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide",
-    "css!./rendering"
+    "jsx!titledslide"
 ], function(React, TitledSlide, md) {
-    return React.createClass({
+    var Slide = React.createClass({
         render: function() {
             return <TitledSlide classes="rendering" title="Rendering Components">
-                <img src="js/app/slides/23/rendering.png" />
+                <img className="slide-image slide-image-fill" src="js/app/slides/23/rendering.png" />
             </TitledSlide>;
        }
     });
+    return Slide;
 });

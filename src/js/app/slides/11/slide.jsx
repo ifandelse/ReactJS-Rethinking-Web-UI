@@ -1,13 +1,18 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!markdownslide",
-    "text!./pros.md",
-    "css!./pros"
-], function(React, MarkdownSlide, md) {
-    return React.createClass({
+    "jsx!titledslide",
+], function(React, TitledSlide) {
+    var Slide = React.createClass({
         render: function() {
-            return <MarkdownSlide classes="pros" title="Pros" markdown={md} />;
+            return <TitledSlide classes="pros" title="Pros">
+                <ul className="spacey-lines slide-content-sm-width">
+                    <li><em>Partially</em> shortens conceptual gap between static &amp; dynamic</li>
+                    <li>It's a well-recognized pattern</li>
+                    <li>Can eliminate boilerplate*</li>
+                </ul>
+            </TitledSlide>;
        }
     });
+    return Slide;
 });

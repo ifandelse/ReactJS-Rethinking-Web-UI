@@ -1,27 +1,171 @@
 html, body {
-	width:1024px;
-    height: 97%;
+    width:1024px;
+    height: 768px;
     margin: .25em auto auto auto;
     background-color: #ECF0F1;
-    font-size: 20pt;
-    line-height: 1.9em;
+    font-size: 1.5em;
+    font-family: Oxygen, Lato, Helvetica, Arial;
 }
 
-.fill {
-	width:1024px;
-    height: 100%;
-    text-align: center;
+body {
+    border: 2pt solid red;
 }
 
-h1 {
-	font-size: 225%;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oxygen, Lato, Helvetica, Arial;
 }
 
-h2 {
-	font-size: 150%;
+p {
+    font-size: 1.5em;
 }
 
 ul {
     text-align: left;
+    display: inline-block;
+    margin: 0 5% 0 5%;
+}
+
+aside {
+    font-size: .5em;
+    font-style: italic;
+    color: dimgray;
+}
+
+.presentation {
+    text-align: center;
+}
+
+.slide {
+    text-align: center;
+}
+
+.slide i {
+    margin-right:.5em;
+}
+
+.slide-title {
+    font-size: 2em;
+}
+
+.slide-headline {
+    font-size: 1.75em;
+}
+
+.slide-headline-alt {
+    color: #35aecc;
+    font-style: italic;
+    text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+}
+
+.slide-image {
+    box-shadow: 10px 5px 5px #AC9C9C;
+    border-radius: 5px;
+    border: 1pt solid dimgray;
+    max-width: 100%;
+}
+
+.slide-image-fill {
+    width: 100%;
+}
+
+.slide-image-scrollable {
+    overflow: scroll;
+}
+
+.scroller {
+    overflow: scroll;
+    height: 500px;
+    box-shadow: 10px 5px 5px #AC9C9C;
+    border-radius: 5px;
+    border: 1pt solid dimgray;
+}
+
+.slide-content-alt {
+    color: #A1314F;
+    text-shadow: rgb(224, 224, 224) 1px 1px 5px silver;
+}
+
+.slide-content-sm {
+    font-size:80%;
+}
+
+.slide-content-med-width {
+    width:70%;
     margin: 0 auto 0 auto;
+}
+
+.slide-content-sm-width {
+    width:52%;
+    margin: 0 auto 0 auto;
+}
+
+.top-breathing-room {
+    margin: 5% 0 0 0;
+}
+
+.bulletless {
+    list-style-type: none;
+}
+
+.slide ul li {
+    margin-top: 1em;
+}
+
+.slide li em {
+    color: #35aecc;
+}
+
+.centered-bullets {
+    text-align: center;
+}
+
+.social {
+    margin:0 .25em 0 0;
+}
+
+.img-tiny {
+    width: 48px;
+}
+
+.med-padding {
+    padding: 1em 1em 1em 1em;
+}
+
+img.leankit {
+    margin: 0 .25em .25em .25em;
+}
+
+.media {
+    margin:10px;
+}
+
+.media, .bd {
+    overflow:hidden; 
+    _overflow:visible; 
+    zoom:1;
+}
+
+.media img {
+    float:left; 
+    margin-right: 10px;
+    display:block;
+}
+
+.media .imgExt{
+    float:right; 
+    margin-left: 10px;
+}
+
+.appeal-img {
+    height: 250px;
+    vertical-align: middle;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.05em;
+}
+
+.white-bg {
+    background-color: white;
 }

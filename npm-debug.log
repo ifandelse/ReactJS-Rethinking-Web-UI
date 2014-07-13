@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Jim/.nvm/v0.10.28/bin/node',
+1 verbose cli   '/Users/Jim/.nvm/v0.10.28/bin/npm',
+1 verbose cli   'info',
+1 verbose cli   'ntlm-auth' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose url raw ntlm-auth
+5 verbose url resolving [ 'https://registry.npmjs.org/', './ntlm-auth' ]
+6 verbose url resolved https://registry.npmjs.org/ntlm-auth
+7 info trying registry request attempt 1 at 22:07:27
+8 http GET https://registry.npmjs.org/ntlm-auth
+9 http 404 https://registry.npmjs.org/ntlm-auth
+10 verbose headers { date: 'Fri, 11 Jul 2014 02:07:28 GMT',
+10 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+10 verbose headers   'content-type': 'application/json',
+10 verbose headers   'cache-control': 'max-age=0',
+10 verbose headers   'content-length': '52',
+10 verbose headers   'accept-ranges': 'bytes',
+10 verbose headers   via: '1.1 varnish',
+10 verbose headers   age: '0',
+10 verbose headers   'x-served-by': 'cache-iad2121-IAD',
+10 verbose headers   'x-cache': 'MISS',
+10 verbose headers   'x-cache-hits': '0',
+10 verbose headers   'x-timer': 'S1405044448.758229,VS0,VE14',
+10 verbose headers   'keep-alive': 'timeout=10, max=50',
+10 verbose headers   connection: 'Keep-Alive' }
+11 silly registry.get cb [ 404,
+11 silly registry.get   { date: 'Fri, 11 Jul 2014 02:07:28 GMT',
+11 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+11 silly registry.get     'content-type': 'application/json',
+11 silly registry.get     'cache-control': 'max-age=0',
+11 silly registry.get     'content-length': '52',
+11 silly registry.get     'accept-ranges': 'bytes',
+11 silly registry.get     via: '1.1 varnish',
+11 silly registry.get     age: '0',
+11 silly registry.get     'x-served-by': 'cache-iad2121-IAD',
+11 silly registry.get     'x-cache': 'MISS',
+11 silly registry.get     'x-cache-hits': '0',
+11 silly registry.get     'x-timer': 'S1405044448.758229,VS0,VE14',
+11 silly registry.get     'keep-alive': 'timeout=10, max=50',
+11 silly registry.get     connection: 'Keep-Alive' } ]
+12 error 404 404 Not Found: ntlm-auth
+12 error 404
+12 error 404 'ntlm-auth' is not in the npm registry.
+12 error 404 You should bug the author to publish it
+12 error 404
+12 error 404 Note that you can also install from a
+12 error 404 tarball, folder, or http url, or git url.
+13 error System Darwin 13.2.0
+14 error command "/Users/Jim/.nvm/v0.10.28/bin/node" "/Users/Jim/.nvm/v0.10.28/bin/npm" "info" "ntlm-auth"
+15 error cwd /Users/Jim/git/oss/React-Rethinking-Web-UI
+16 error node -v v0.10.28
+17 error npm -v 1.4.9
+18 error code E404
+19 verbose exit [ 1, true ]
