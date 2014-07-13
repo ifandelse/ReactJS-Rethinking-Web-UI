@@ -6,6 +6,7 @@
 	padding: 3%;
 	font-style: italic;
 	line-height: 175%;
+	border-radius: 5px;
 }
 
 .appeal2 .quote-dijkstra2::after {
@@ -20,6 +21,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 5px;
 }
 
 .appeal2 .quote-dijkstra2 em {

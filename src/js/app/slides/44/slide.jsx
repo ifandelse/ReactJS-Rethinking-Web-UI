@@ -1,7 +1,8 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!markdownslide"
+    "jsx!markdownslide",
+    "text!./events3.md"
 ], function(React, MarkdownSlide, md) {
     var Slide = React.createClass({
         render: function() {
