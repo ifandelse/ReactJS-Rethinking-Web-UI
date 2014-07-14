@@ -3,12 +3,12 @@ define([
     "jsx!./ContactForm",
     "jsx!./Overlay",
     "jsx!./OnChangeViewer",
-    "./dataMixin"
-], function(React, ContactForm, Overlay, OnChangeViewer, dataMixin) {
+    "./msgMixin"
+], function(React, ContactForm, Overlay, OnChangeViewer, msgMixin) {
 
     var SmartForm = React.createClass({
 
-        mixins: [dataMixin],
+        mixins: [msgMixin],
         
         getInitialState: function() {
             return {
@@ -35,7 +35,7 @@ define([
             
         render: function() {
             return <div className="form-container">
-                { (this.state.notReady) ? <Overlay /> : null }
+                { (this.state.notReady) ? this.transferPropsTo(<Overlay />) : null }
                 <ContactForm
                     firstName={this.state.firstName}
                     lastName={this.state.lastName}

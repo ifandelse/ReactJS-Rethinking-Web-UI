@@ -1,11 +1,11 @@
 define([
     "react",
-    "./dataMixin"
-], function(React, dataMixin) {
+    "./msgMixin"
+], function(React, msgMixin) {
 
   var ContactForm = React.createClass({
 
-    mixins: [dataMixin],
+    mixins: [msgMixin],
     
     handleChange: function(e) {
         var data = {};

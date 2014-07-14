@@ -39,10 +39,10 @@ define([
       };
 			return <div onClick={this.updateRow} style={style} >
 				{
-					this.props.widths.map(function(i, idx){
+					this.props.widths.map(function(width, idx){
 						return <Kitteh key={idx}
                            height={this.props.height}
-                           width={this.props.widths[idx]} />
+                           width={width} />
 					}.bind(this))
 				}
 			</div>;	

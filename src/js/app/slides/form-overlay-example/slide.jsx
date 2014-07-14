@@ -10,7 +10,7 @@ define([
         render: function() {
             return <div className="form-example">
                 <h2 className="slide-title">Form + Overlay Example</h2>
-                <SmartForm channel="form-example"/>
+                {this.transferPropsTo(<SmartForm channel="form-example"/>)}
             </div>;
         }
     });

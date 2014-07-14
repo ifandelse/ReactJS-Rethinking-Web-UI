@@ -42,7 +42,7 @@ define([
 						var height = this.state.heights[idx];
 						return <KittehRow
     									key={ idx }
-    									widths={ this.state.rows[idx] }
+    									widths={ widths }
     									height={ height }
     									maxWidth={ this.props.width + 20 }
     							 />

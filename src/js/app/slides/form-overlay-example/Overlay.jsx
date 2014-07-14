@@ -5,7 +5,7 @@ define([
     var Overlay = React.createClass({
         getDefaultProps: function() {
             return {
-                src: "js/app/slides/35/loadingGif.gif"
+                src: this.props.imageDir + "loadingGif.gif"
             };
         },
 
