@@ -22,6 +22,10 @@ define([
 			self.currentPos = newPos;
 		}
 		self.nextPos = undefined;
+		if((self.currentPos < 0) || (self.currentPos >= presConfig.slides.length)) {
+			self.currentPos = self.prevPos;
+		}
+
 		return slide.request({
 			topic: "position.change",
 			data: {
