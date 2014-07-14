@@ -31,3 +31,5 @@ For anyone that comes across this repo (and especially those who attended the pr
 * ["IMGUI - Immediate Mode GUI" (Johannes Norneby's work in progress)](http://www.johno.se/book/imgui.html)
 * [Immediate Mode Graphical User Interfaces (slide deck)](http://www.cse.chalmers.se/edu/year/2011/course/TDA361/Advanced%20Computer%20Graphics/IMGUI.pdf)
 * [Simple Made Easy (talk by Rich Hickey)](http://www.infoq.com/presentations/Simple-Made-Easy) (one of the single most important talks you can watch, IMO)
+* [React’s diff algorithm - by Christopher Chedeau](http://calendar.perfplanet.com/2013/diff/)
+* [React v0.11 RC](http://facebook.github.io/react/blog/2014/07/13/react-v0.11-rc1.html)
