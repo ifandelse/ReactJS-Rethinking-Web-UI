@@ -10,6 +10,8 @@ define([
 
 		initialize: function() {
 			_.bindAll(this, "handleRoot", "handleSlide");
+			// The presentation FSM requests slide position changes
+			// when forward/back keys are used, so we need to handle that
 			slide.subscribe("position.change", function(data, env){
 				this.navigate("#slide/" + data.slideId);
 				env.reply({});
@@ -17,7 +19,7 @@ define([
 		},
 
 		routes: {
-			""    : "handleRoot",
+			"" : "handleRoot",
 			"slide/:id" : "handleSlide"
 		},
 

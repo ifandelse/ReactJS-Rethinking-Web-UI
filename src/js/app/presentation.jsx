@@ -4,11 +4,31 @@ define([
 	"react",
 	"machina",
 	"mousetrap",
-	"postal"
-], function(React, machina, Mousetrap, postal) {
+	"postal",
+	"json!./slide-order.json"
+], function(React, machina, Mousetrap, postal, presConfig) {
 
 	var slide = postal.channel("slide");
 	var router = postal.channel("router");
+
+	function changeSlidePosition(direction) {
+		var self = this;
+		var newPos;
+		newPos = self.nextPos;
+		self.prevPos = self.currentPos;
+		if(newPos === undefined) {
+			self.currentPos = (direction === "advancing") ? self.currentPos + 1 : self.currentPos - 1;
+		} else {
+			self.currentPos = newPos;
+		}
+		self.nextPos = undefined;
+		return slide.request({
+			topic: "position.change",
+			data: {
+				slideId: self.currentPos 
+			}
+		});
+	}
 
 	return machina.Fsm.extend({
 		initialize: function() {
@@ -63,47 +83,19 @@ define([
 			},
 			advancing: {
 				_onEnter: function() {
-					var self = this;
-					var newPos;
-					newPos = self.nextPos;
-					self.prevPos = self.currentPos;
-					if(newPos === undefined) {
-						self.currentPos = self.currentPos + 1;
-					} else {
-						self.currentPos = newPos;
-					}
-					self.nextPos = undefined;
-					slide.request({
-						topic: "position.change",
-						data: {
-							slideId: self.currentPos 
-						}
-					}).then(function(data){
-						self.handle("advanced");
-					});
+					changeSlidePosition.call(this, "advancing")
+						.then(function(data){
+							this.handle("advanced");
+						}.bind(this));
 				},
 				advanced: "viewing"
 			},
 			rewinding: {
 				_onEnter: function() {
-					var self = this;
-					var newPos;
-					newPos = self.nextPos;
-					self.prevPos = self.currentPos;
-					if(newPos === undefined) {
-						self.currentPos = self.currentPos - 1;
-					} else {
-						self.currentPos = newPos;
-					}
-					self.nextPos = undefined;
-					slide.request({
-						topic: "position.change",
-						data: {
-							slideId: self.currentPos 
-						}
-					}).then(function(data){
-						self.handle("rewound");
-					});
+					changeSlidePosition.call(this, "rewinding")
+						.then(function(data){
+							this.handle("rewound");
+						}.bind(this));
 				},
 				rewound: "viewing"
 			}
@@ -111,9 +103,10 @@ define([
 
 		renderCurrentSlide: function() {
 			var self = this;
-			require(["jsx!js/app/slides/" + self.currentPos + "/slide"], function(Slide){
+			var slide = presConfig.slides[self.currentPos];
+			require(["jsx!js/app/slides/" + slide + "/slide"], function(Slide){
 				React.renderComponent(
-					Slide(),
+					Slide({ imageDir: "js/app/slides/" + slide + "/" }),
 					document.getElementById("presentation")
 				);
 			}, function (err) {
