@@ -3,6 +3,11 @@
 ##The 'What'
 This is a presentation that I've been putting together for both [NoogaJS](http://noogajs.org/#/) and [Devlink](http://www.devlink.net/). As with any "introduction"-style presentation, the hope is to convey enough of the basics and the philosophy to encourage interested developers to go and check it out for themselves and start building things with it!
 
+##The 'How'
+Clone this repo, and run `npm install` from the root. Then run `npm start`. If `open` doesn't open a browser window for you, open one to <http://localhost:3080>. Use the left and right arrow keys to navigate through the presentation (focus has to be on the page for the arrow keys to work). I've only
+tested this presentation in Chrome - but odds are it will work fine in Safari and Firefox. No idea about
+IE. I often boot my windows VM just to intentionally neglect it.
+
 ##The 'Why'
 I love the web - and I love JavaScript. However, as much of an OSS geek I've been – and as excited as I've been by the promises made my client-side frameworks – my hopes have been constantly dashed against the rocks. ReactJS is the first time my thinking about how UI should be done has been radically challenged and changed. I'm the most excited I've been about client-side UI in *years*, thanks to ReactJS.
 
