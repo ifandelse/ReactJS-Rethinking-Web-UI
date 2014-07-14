@@ -28,3 +28,6 @@ For anyone that comes across this repo (and especially those who attended the pr
 * [Ben Smith's super fun post on React + SVG](http://10consulting.com/2014/02/19/d3-plus-reactjs-for-charting/)
 * [A Thrown-to-the-Wolves-Hands-On Introduction to React Part 1 (by me)](http://tech.pro/blog/2020/a-thrown-to-the-wolves-hands-on-introduction-to-react)
 * [A Thrown-to-the-Wolves-Hands-On Introduction to React Part 2](http://tech.pro/blog/2044/a-thrown-to-the-wolves-hands-on-introduction-to-react-part-2)
+* ["IMGUI - Immediate Mode GUI" (Johannes Norneby's work in progress)](http://www.johno.se/book/imgui.html)
+* [Immediate Mode Graphical User Interfaces (slide deck)](http://www.cse.chalmers.se/edu/year/2011/course/TDA361/Advanced%20Computer%20Graphics/IMGUI.pdf)
+* [Simple Made Easy (talk by Rich Hickey)](http://www.infoq.com/presentations/Simple-Made-Easy) (one of the single most important talks you can watch, IMO)
