@@ -11,7 +11,7 @@ define([
                     <li>Called when a component is receiving new props.</li>
                     <li>Old props can still be accessed via <code>this.props</code> and new props are passed into the method.</li>
                 </ul>
-                <img className="top-breathing-room slide-image" src={this.props.imageDir + "willprops.png"} />
+                <img width="700" className="top-breathing-room slide-image" src={this.props.imageDir + "willprops.png"} />
             </TitledSlide>;
        }
     });

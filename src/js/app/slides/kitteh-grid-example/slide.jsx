@@ -11,19 +11,19 @@ define([
 
     	getInitialState: function() {
     		return {
-    			rows: 3
+    			rowCount: 3
     		}
     	},
 
     	tryAgain: function() {
-    		this.setState({ rows: _.random(2,3) });
+    		this.setState({ rowCount: _.random(2,3) });
     	},
 
 		render: function() {
 			return <TitledSlide title="Composing Components">
 				<div className="kitties">
 						<KittehGrid
-							rows={this.state.rows}
+							rows={this.state.rowCount}
 							minKitty="2"
 							maxKitty="5"
 							width="780"

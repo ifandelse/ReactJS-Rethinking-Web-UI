@@ -27,7 +27,8 @@
     "gulp-rename": "~1.2.0",
     "gulp-uglify": "~0.2.1",
     "gulp-util": "~2.2.14",
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "should": "^4.0.4"
   },
   "licenses": [
     {

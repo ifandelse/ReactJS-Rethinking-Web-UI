@@ -2,10 +2,9 @@
 define([
   "react",
   "jsx!./KittehRow",
-  "lodash",
   "postal",
   "./stateGenerator",
-], function(React, KittehRow, _, postal, stateGenerator) {
+], function(React, KittehRow, postal, stateGenerator) {
 
 	var channel = postal.channel("kitty");
 
@@ -24,7 +23,7 @@ define([
   		this.subscription.unsubscribe();
   	},
 
-  	componentWillReceiveProps: function() {
+  	componentWillReceiveProps: function(nextProps) {
   		this.updateWithGeneratedState();
   	},
 
@@ -44,7 +43,7 @@ define([
     									key={ idx }
     									widths={ widths }
     									height={ height }
-    									maxWidth={ this.props.width + 20 }
+                      maxWidth={ this.props.width + 20 }
     							 />
 					}.bind(this))
 				}

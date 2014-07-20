@@ -7,6 +7,16 @@ define([
 
     mixins: [msgMixin],
     
+    /*
+      Since I'm using text inputs I can get away
+      with a naive, but simple, means of getting
+      key/value pairs (controlId/Value). But since
+      I gave the input controls a "ref" prop, I 
+      could also access them like this:
+          txtInput = this.refs.firstName.getDOMNode();
+      Regardless - it's likely still better to get
+      what you need from the event object
+    */
     handleChange: function(e) {
         var data = {};
         data[e.currentTarget.id] = e.currentTarget.value;
