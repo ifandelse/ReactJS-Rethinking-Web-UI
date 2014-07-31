@@ -9,11 +9,7 @@ define([
 			var classes = ["question", "zoomIn", "animated", this.props.className || ""];
 			return <div className={classes.join(" ")}>
 				<h3>{this.props.text}</h3>
-				{
-					this.props.type === "single" ?
-						<SingleChoice choices={this.props.choices} answer={this.props.answer} /> : 
-						<MultipleChoice choices={this.props.choices} answer={this.props.answer} />
-				}
+				<SingleChoice choices={this.props.choices} answer={this.props.answer} />
 			</div>;
 		}
 	});

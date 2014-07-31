@@ -5,14 +5,14 @@
 			"description" : "Maze War is arguably the original first-person shooter. Created in 1973 by summer high school interns at NASA. Opponents hunted each other in a maze.",
 			"question" : {
 				"text": "What features is Maze Wars known for originating/disseminating?",
-				"type": "multiple",
 				"choices" : [
 					"Avatars used to represent players",
 					"First peer-to-peer game",
 					"Had a level editor",
-					"Map showing player's position"
+					"Map showing player's position",
+					"All of the above"
 				],
-				"answer": [0,1,2,3]
+				"answer": [4]
 			},
 			"trivia" : [
 				"First game with a first-person 3D perspective",
@@ -30,7 +30,6 @@
 			"description" : "One of the first digital computer games. Two players controlled a ship and tried to destroy each other.",
 			"question" : {
 				"text": "What year was 'Spacewar!' created?",
-				"type": "single",
 				"choices" : ["1965", "1962", "1971"],
 				"answer": [1]
 			},
@@ -50,7 +49,6 @@
 			"description" : "The first game developed by Atari, it was a 2-player digital table tennis game.",
 			"question" : {
 				"text": "Atari co-founder Nolan Bushnell assigned the creation of 'Pong' as a training exercise to:",
-				"type": "single",
 				"choices" : ["Harold Lee", "Bob Brown", "Allan Alcorn"],
 				"answer": [2]
 			},
@@ -70,7 +68,6 @@
 			"description" : "Built for the Atari 2600, a player must complete a quest for a magical chalice, while avoiding enemies: a thieving bat and three hungry dragons.",
 			"question" : {
 				"text": "True or False: with 'Adventure', Atari began officially crediting game authors for their work.",
-				"type": "single",
 				"choices" : ["true", "false"],
 				"answer": [1]
 			},
@@ -90,7 +87,6 @@
 			"description" : "The sequel to Galaxian, Galaga was a 'fixed' shooter where the player, controlling a ship at the bottom of the screen, battles various enemy formations, with increasing difficulty over each level.",
 			"question" : {
 				"text": "Galaga suffered from a well known bug when transitioning from level 255 to 256. What kind of bug was it?",
-				"type": "single",
 				"choices" : ["segfault", "integer overflow", "heap overflow"],
 				"answer": [1]
 			},
@@ -110,7 +106,6 @@
 			"description" : "A 2D shooter, where the player, controlling a ship, must protect astronauts by defeating waves of enemy ships.",
 			"question" : {
 				"text": "Defender has become one of the highest grossing arcade games ever, earning over:",
-				"type": "single",
 				"choices" : [
 					"$1 billion",
 				 	"$500 million",
@@ -133,7 +128,6 @@
 			"description" : "One of the earliest shooting games, where the player defeats waves of invading enemies.",
 			"question" : {
 				"text": "How long did the game's creator spend designing his own custom hardware and development tools to create the game?",
-				"type": "single",
 				"choices" : [ "5 months", "Over 1 year", "2 years"],
 				"answer": [1]
 			},
@@ -154,7 +148,6 @@
 			"description" : "The iconic game of the early industry, players control Pac-Man in a maze, eating dots and fruit, while avoiding hostile ghosts.",
 			"question" : {
 				"text": "Pac-Man's original name was:",
-				"type": "single",
 				"choices" : [
 					"Wakka-Wakka",
 					"Ghost Maze",

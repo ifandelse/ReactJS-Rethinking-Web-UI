@@ -50,7 +50,8 @@ define([
 										  type={this.props.question.type}
 										  answer={this.props.question.answer} />:
 							<GameBlurb name={this.props.name}
-									   description={this.props.description} />
+									   active={this.props.active}
+									   trivia={[this.props.description].concat(this.props.trivia)} />
 				
 					}
 				</CarouselItem>

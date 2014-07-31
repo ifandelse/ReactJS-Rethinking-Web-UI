@@ -27,6 +27,7 @@ define([
 				<Carousel slide={!this.state.isPaused}
 					controls={!this.state.isPaused}
 					indicators={!this.state.isPaused}
+					pauseOnHover={true}
 					className="quiz-carousel">
 					{
 						this.props.games.map(function(game, idx){
@@ -36,7 +37,8 @@ define([
 										name={game.name}
 										image={"/images/" + game.images[0]}
 										question={game.question}
-										description={game.description}/>)
+										description={game.description}
+										trivia={game.trivia}/>)
 						}.bind(this))
 					}
 				</Carousel>
