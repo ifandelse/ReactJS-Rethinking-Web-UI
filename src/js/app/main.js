@@ -16,11 +16,13 @@ require.config( {
         mousetrap                 : "js/lib/mousetrap/mousetrap",
         postal                    : "js/lib/postal.js/lib/postal",
         "postal.request-response" : "js/lib/postal.request-response/lib/postal.request-response",
+        "postal.react"            : "js/lib/postal.react/postal.react",
         react                     : "js/lib/react/react-with-addons",
         "react.animate"           : "js/lib/react.animate/react.animate",
         text                      : "js/lib/requirejs-text/text",
         underscore                : "js/lib/underscore/underscore",
-        titledslide               : "js/app/components/TitledSlide"
+        titledslide               : "js/app/components/TitledSlide",
+        stepFsm                   : "js/app/stepFsm"
     },
 
     jsx: {
@@ -42,7 +44,8 @@ define( [
     "jsx!js/app/presentation",
     "js/app/router",
     "jquery",
-    "postal.request-response"
+    "postal.request-response",
+    "js/app/postal.mousetrap"
  ], function( Presentation, Router, $, postal ) {
 
     // We need to tell postal how to get a deferred instance

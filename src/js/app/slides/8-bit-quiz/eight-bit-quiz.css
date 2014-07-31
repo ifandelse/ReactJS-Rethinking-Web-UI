@@ -1,0 +1,108 @@
+/* OHHHH the hackery going on in this file is
+the kind of thing I hope to forget I ever did. :-) */
+
+.answer {
+	text-shadow: rgb(224, 224, 224) 1px 1px 5px silver;
+	font-size: 1.5em;
+}
+
+.answer i {
+	margin:1em .5em 0 0;
+}
+
+.answer .fa-check {
+	color: green;
+}
+
+.answer .fa-bomb {
+	color: red;
+}
+
+.question > h3 {
+	font-size:1em;
+	width: 80%;
+	margin: .5em auto .5em auto;
+}
+
+.question .choice {
+	font-size: .7em;
+}
+
+.choice input {
+	margin-right: .35em;
+}
+
+.question ul {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+.quiz-carousel .is-hidden {
+	visibility: collapse;
+	max-height: 0;
+	overflow: hidden;
+}
+
+.quiz-carousel .item .slide-image {
+	margin: 10px auto 0 auto;
+	height: 300px;
+}
+
+.quiz-carousel .carousel-caption {
+	position:relative;
+	left:0;
+	right:0;
+}
+
+.quiz-image {
+	-moz-transition: max-height .5s ease;
+    -webkit-transition: max-height .5s ease;
+    -o-transition: max-height .5s ease;
+    transition: max-height .5s ease;
+    max-height: 300px;
+}
+
+.quiz-image-small {
+	max-height: 200px;
+}
+
+.carousel-caption h3 {
+	font-size:1.5em;
+	color: #000;
+	font-family: 'Oxygen';
+}
+
+.carousel-caption p {
+	font-size: .7em;
+	width: 60%;
+	margin: 0 auto 0 auto;
+	color: dimgray;
+	text-shadow: none;
+	height:150px;
+}
+
+.quiz-carousel ol {
+	margin-top:2em;
+}
+
+.quiz-carousel {
+	height:605px;
+}
+
+.carousel-indicators li {
+	border: 1px solid dimgray;
+}
+
+.carousel-indicators li.active {
+	background-color: silver;
+}
+
+.carousel-control > span {
+	color:#2c3e50;
+}
+
+.carousel {
+	border: 2pt solid #2c3e50;
+}

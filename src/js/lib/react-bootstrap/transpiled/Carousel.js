@@ -96,6 +96,7 @@ define(
         }
 
         this.handleSelect(index, 'next');
+        console.log("next-> " + index);
 
         if (e) {
           e.preventDefault();
@@ -113,6 +114,7 @@ define(
         }
 
         this.handleSelect(index, 'prev');
+        console.log("prev-> " + index);
 
         if (e) {
           e.preventDefault();

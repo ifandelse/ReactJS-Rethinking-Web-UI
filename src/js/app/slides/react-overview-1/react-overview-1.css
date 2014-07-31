@@ -1,0 +1,11 @@
+.react-overview-1 li:nth-child(2n+1) {
+	list-style-image: url(/images/SI_Bullet1.png);
+}
+
+.react-overview-1 li:nth-child(2n) {
+	list-style-image: url(/images/SI_Bullet2.png);
+}
+
+.react-overview-1 .slide-children {
+	font-size: 1.25em;
+}

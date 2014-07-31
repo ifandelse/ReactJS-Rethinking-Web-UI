@@ -1,0 +1,23 @@
+.react-overview-2 li {
+	padding-left: .35em;
+}
+
+.react-overview-2 li:nth-child(2n+1) {
+	list-style-image: url(/images/SIb_Bullet1.png);
+}
+
+.react-overview-2 li:nth-child(2n) {
+	list-style-image: url(/images/SIb_Bullet2.png);
+}
+
+.react-overview-2 ul > li > ul li:nth-child(2n+1) {
+	list-style-image: url(/images/SIc_Bullet1.png);
+}
+
+.react-overview-2 ul > li > ul li:nth-child(2n) {
+	list-style-image: url(/images/SIc_Bullet2.png);
+}
+
+.react-overview-2 .slide-children {
+	font-size: 1.35em;
+}

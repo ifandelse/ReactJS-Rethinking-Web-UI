@@ -7,6 +7,10 @@ html, body {
     font-family: Oxygen, Lato, Helvetica, Arial;
 }
 
+body {
+    /*border: 1pt solid red;*/
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Oxygen, Lato, Helvetica, Arial;
 }
@@ -17,7 +21,7 @@ p {
 
 ul {
     text-align: left;
-    display: inline-block;
+    /*display: inline-block;*/
     margin: 0 5% 0 5%;
 }
 
@@ -25,6 +29,10 @@ aside {
     font-size: .5em;
     font-style: italic;
     color: dimgray;
+}
+
+.eight-bit-type {
+    font-family: 'Press Start 2P'
 }
 
 .presentation {
@@ -58,6 +66,7 @@ aside {
     border-radius: 5px;
     border: 1pt solid dimgray;
     max-width: 100%;
+    max-height: 768px;
 }
 
 .slide-image-fill {
