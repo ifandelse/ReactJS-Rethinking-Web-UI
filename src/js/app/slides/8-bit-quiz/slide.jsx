@@ -2,7 +2,7 @@
 define([
 	"react",
 	"jsx!./QuizCarousel",
-	"json!./data.json"
+	"json!../../gameData.json"
 ], function(React, QuizCarousel, data) {
 	return React.createClass({
 		render: function() {

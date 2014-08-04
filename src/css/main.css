@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    /*border: 1pt solid red;*/
+    border: 1pt solid red;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,7 +58,11 @@ aside {
 .slide-headline-alt {
     color: #35aecc;
     font-style: italic;
-    text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+    text-shadow: rgb(224, 224, 224) 1px 1px 0;
+}
+
+.slide-children {
+    position:relative;
 }
 
 .slide-image {
@@ -69,12 +73,21 @@ aside {
     max-height: 768px;
 }
 
+.slide-image-constrained-lg {
+    max-height: 650px;
+}
+
+.slide-image-constrained {
+    max-height: 500px;
+}
+
 .slide-image-fill {
     width: 100%;
 }
 
 .slide-image-scrollable {
     overflow: scroll;
+    max-width: 100%;
 }
 
 .scroller {
@@ -83,6 +96,10 @@ aside {
     box-shadow: 10px 5px 5px #AC9C9C;
     border-radius: 5px;
     border: 1pt solid dimgray;
+}
+
+.scroller-lg {
+    height:650px;
 }
 
 .slide-content-alt {

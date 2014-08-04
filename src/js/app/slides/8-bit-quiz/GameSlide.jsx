@@ -20,10 +20,6 @@ define([
 			};
 		},
 
-		componentWillMount: function() {
-			// listen for answers....
-		},
-
 		componentWillUnmount: function() {
 			this.disposeSubscriptions();
 		},

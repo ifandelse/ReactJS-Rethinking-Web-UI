@@ -1,0 +1,22 @@
+.gamex-title {
+	font-size: 1.5em;
+	color: #000;
+	font-family: 'Oxygen';
+}
+
+.gamex-desc {
+	font-size: .7em;
+	width: 60%;
+	margin: 0 auto 0 auto;
+	color: dimgray;
+	text-shadow: none;
+	height: 150px;
+}
+
+.gamex-image {
+	max-height: 300px;
+}
+
+.gamex-inactive {
+	display: none;
+}

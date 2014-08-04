@@ -22,7 +22,8 @@ require.config( {
         text                      : "js/lib/requirejs-text/text",
         underscore                : "js/lib/underscore/underscore",
         titledslide               : "js/app/components/TitledSlide",
-        stepFsm                   : "js/app/stepFsm"
+        stepFsm                   : "js/app/stepFsm",
+        transitionManager         : "js/app/components/TransitionManager"
     },
 
     jsx: {

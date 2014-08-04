@@ -6,18 +6,9 @@ define([
 ], function(React, TitledSlide, StepFsm) {
 
     var images = [
-        "letscreate1.png",
-        "letscreate2.png",
-        "letscreate3.png",
-        "letscreate4.png",
-        "letscreate5.png",
-        "letscreate6.png",
-        "letscreate7.png",
-        "letscreate8.png",
-        "letscreate9.png",
-        "letscreate11.png",
-        "letscreate12.png",
-        "letscreate13.png",
+        "lets-render-one1.png",
+        "lets-render-one2.png",
+        "lets-render-one3.png"
     ];
 
     function produceSteps(images) {
@@ -47,8 +38,8 @@ define([
         },
 
         render: function() {
-            return <TitledSlide classes="dev-tools" title="Creating a Component">
-               <img src={this.props.imageDir + this.state.image} className="slide-image" />
+            return <TitledSlide classes="dev-tools" title="Rendering a Component">
+        	   <img src={this.props.imageDir + this.state.image} className="slide-image" />
             </TitledSlide>;
        }
     });
