@@ -12,4 +12,8 @@ define([
 	    channel.publish("next", { cmd: "next" });
 	});
 
+	Mousetrap.bind('ctrl+alt+left', function(e) {
+    	channel.publish("beginning", { cmd: "beginning" });
+	});
+
 });

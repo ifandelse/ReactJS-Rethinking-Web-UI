@@ -6,7 +6,7 @@ define([
     "jsx!./GameSlide",
     "css!./eight-bit-quiz.css"
 ], function(React, Carousel, reactPostal, GameSlide) {
-	return React.createClass({
+	var QuizCarousel = React.createClass({
 
 		mixins: [reactPostal],
 
@@ -20,6 +20,10 @@ define([
 			this.subscribe("slide.toggle", function(data, env){
 				this.setState({ isPaused: data.showQuestion });
 			});
+		},
+
+		componentWillUnmount: function() {
+			this.disposeSubscriptions();
 		},
 
 		render: function() {
@@ -45,4 +49,5 @@ define([
 			);
 		}
 	});
+	return QuizCarousel;
 });

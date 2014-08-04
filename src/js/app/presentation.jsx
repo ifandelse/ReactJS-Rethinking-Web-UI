@@ -76,6 +76,10 @@ define([
 			this.handle("previous");
 		},
 
+		beginning: function() {
+			this.handle("selectSlide", 0);
+		},
+
 		states: {
 			uninitialized: {
 				start: "viewing",
@@ -105,7 +109,8 @@ define([
 				"yield.next" : "advancing",
 				"yield.previous" : "rewinding",
 				selectSlide: function() {
-					this.deferAndTransition("viewing");
+					this.deferUntilTransition("viewing");
+					this.transition("viewing");
 				}
 			},
 			advancing: {

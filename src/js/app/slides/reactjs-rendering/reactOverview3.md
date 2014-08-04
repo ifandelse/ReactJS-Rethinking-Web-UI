@@ -1,5 +1,4 @@
-* Components render to an intermediate DOM
-* Changes are diff-ed with the real DOM
+* Components render to a virtual DOM
+* Changes are diff-ed in the virtual DOM
 * Minimum set of DOM operations are computed and queued
-* Batch executes all updates (usually beats manual DOM ops)
-* The virtual DOM means you could render server-side in node.js
+* Batch executes all updates to "patch" the real DOM

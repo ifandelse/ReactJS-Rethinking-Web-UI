@@ -53,10 +53,10 @@
 				"answer": [2]
 			},
 			"trivia" : [
-				"Pong's controller paddles were unable to reach the top of screen. This was cdue to a circuit that had an inherent defect.",
+				"Pong's controller paddles were unable to reach the top of screen. This was due to a circuit that had an inherent defect.",
 				"Atari was sued by Ralph Baer, the inventor of the Magnavox Odyssey, for patent infringement, as the Odyssey had a table tennis game.",
-				"Arcade cabinets of Pong started production in 1972. They were being shipped to foreign countries by 1973.",
-				"Atari settled the infringement suit by accepting Magnavox's offer to become a licensee for $700k."
+				"Atari settled the infringement suit by accepting Magnavox's offer to become a licensee for $700k.",
+				"Arcade cabinets of Pong started production in 1972. They were being shipped to foreign countries by 1973."
 			],
 			"images" : [
 				"pong2.gif",
@@ -92,7 +92,7 @@
 			},
 			"trivia" : [
 				"Galaga was released in 1981.",
-				"Integer overflow bug caused players advancing from 255th round to encounter level 256 with *no* enemies.",
+				"An integer overflow bug caused players advancing from 255th round to encounter level 256 with *no* enemies.",
 				"Another game glitch, if exploited, could cause enemies to stop firing at you.",
 				"MGM sent a Galaga machine to Matthew Broderick so that he could practice playing before shooting the movie WarGames."
 			],

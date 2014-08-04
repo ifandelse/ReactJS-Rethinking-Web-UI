@@ -1,9 +1,8 @@
 /** @jsx React.DOM */
 define([
 	"react",
-	"jsx!./SingleChoice",
-	"jsx!./MultipleChoice"
-], function(React, SingleChoice, MultipleChoice) {
+	"jsx!./SingleChoice"
+], function(React, SingleChoice) {
 	var QuizQuestion = React.createClass({
 		render: function() {
 			var classes = ["question", "zoomIn", "animated", this.props.className || ""];

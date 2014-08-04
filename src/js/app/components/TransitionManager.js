@@ -55,7 +55,7 @@ define([
 				next: function(){
 					this.timer = setTimeout(function(){
 						this.transition("advancing");
-					}.bind(this), this.interval || 4000);
+					}.bind(this), this.interval || 3500);
 				}
 			},
 			advancing: {

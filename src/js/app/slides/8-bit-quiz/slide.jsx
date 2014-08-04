@@ -4,9 +4,10 @@ define([
 	"jsx!./QuizCarousel",
 	"json!../../gameData.json"
 ], function(React, QuizCarousel, data) {
-	return React.createClass({
+	var EightBitQuiz = React.createClass({
 		render: function() {
-			return <QuizCarousel channel="quiz" games={data.quiz}/>;
+			return <QuizCarousel channel="quiz" games={data.quiz} interval={23000}/>;
 		}
 	});
+	return EightBitQuiz;
 });
