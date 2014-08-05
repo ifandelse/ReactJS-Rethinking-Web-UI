@@ -2,7 +2,8 @@
 define([
     "react",
     "jsx!markdownslide",
-    "text!./events.md"
+    "text!./events.md",
+    "css!./reactjs-and-events.css"
 ], function(React, MarkdownSlide, md) {
     var Slide = React.createClass({
         render: function() {

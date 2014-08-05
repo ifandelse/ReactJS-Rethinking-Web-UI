@@ -1,7 +1,38 @@
 .warm-fuzzy .slide-children {
-	margin-top:5%;
+	margin-top:0;
 }
 
 .warm-fuzzy .bd {
-	margin-top:4%;
+	width:70%;
+	margin:0 auto 0 auto;
+}
+
+.bd ul {
+	margin:0 auto 0 auto;
+}
+
+.warm-fuzzy .complete-me {
+	font-size: .8em;
+	background-color: #000;
+	color: white;
+	padding: 1em 0 1em 0;
+	width: 90%;
+	margin:auto;
+	border-radius: 5px;
+}
+
+.complete-me .jsx {
+	font-size: 1.5em;
+}
+
+.warm-fuzzy li {
+	background-image: url(/images/galaga_bullet1.png);
+	background-repeat: no-repeat;
+	padding-left: 65px;
+	background-position: 0 6px;
+	list-style-type: none;
+}
+
+.warm-fuzzy .slide-children {
+	font-size: 1.25em;
 }

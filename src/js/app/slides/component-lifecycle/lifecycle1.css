@@ -1,0 +1,7 @@
+.lifecycle1 ul > li {
+	background-image: url(/images/defender_bullet2.png);
+	background-repeat: no-repeat;
+	padding-left: 85px;
+	list-style-type: none;
+	background-position: 0 10px;
+}

@@ -1,3 +1,25 @@
-.see-what ul {
-	width: 69%;
+.see-what .slide-children > ul {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.see-what ul > li {
+	background-image: url(/images/galaga_bullet3.png);
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	background-position: 0 2px;
+	list-style-type: none;
+}
+
+.see-what ul > li > ul > li {
+	background-image: url(/images/galaga_bullet4.png);
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	background-position: 0 10px;
+	list-style-type: none;
+}
+
+.see-what ul > li > ul {
+	margin-left: 0;
 }

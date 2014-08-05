@@ -1,11 +1,12 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide"
+    "jsx!titledslide",
+    "css!./jsx-tooling-3.css"
 ], function(React, TitledSlide) {
     var Slide = React.createClass({
         render: function() {
-            return <TitledSlide classes="jsx-tooling3" title="JSX Tooling">
+            return <TitledSlide classes="jsx-tooling-3" title="JSX Tooling">
                 <h2 className="slide-headline-alt">Build-tool &amp; IDE Integrations</h2>
 
                 <ul>

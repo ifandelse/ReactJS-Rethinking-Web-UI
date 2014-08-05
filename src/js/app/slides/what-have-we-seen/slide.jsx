@@ -2,7 +2,8 @@
 define([
     "react",
     "jsx!markdownslide",
-    "text!./seenWhat.md"
+    "text!./seenWhat.md",
+    "css!./seenWhat.css"
 ], function(React, MarkdownSlide, md) {
     var Slide = React.createClass({
         render: function() {

@@ -1,11 +1,12 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide"
+    "jsx!titledslide",
+    "css!./component-helpers.css"
 ], function(React, TitledSlide) {
     var Slide = React.createClass({
         render: function() {
-            return <TitledSlide title="Component Helpers">
+            return <TitledSlide classes="component-helpers" title="Component Helpers">
                 <div>
                     <em className="slide-headline-alt">(to name a few, for example)</em>
                 </div>

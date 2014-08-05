@@ -1,0 +1,11 @@
+.component-helpers ul {
+	display: inline-block;
+}
+
+.component-helpers ul > li {
+	background-image: url(/images/pacman_bullet4.png);
+	background-repeat: no-repeat;
+	padding-left: 55px;
+	list-style-type: none;
+	background-position: 0 5px;
+}

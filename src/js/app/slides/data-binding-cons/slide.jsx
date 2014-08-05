@@ -1,7 +1,8 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide"
+    "jsx!titledslide",
+    "css!./data-binding-cons.css"
 ], function(React, TitledSlide) {
     var Slide = React.createClass({
         render: function() {

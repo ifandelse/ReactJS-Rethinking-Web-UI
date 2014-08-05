@@ -1,0 +1,7 @@
+.reactjs-rendering ul > li {
+	background-image: url(/images/galaga_bullet6.png);
+	background-repeat: no-repeat;
+	padding-left: 62px;
+	background-position: 0 0px;
+	list-style-type: none;
+}

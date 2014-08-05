@@ -1,0 +1,7 @@
+.seen-what-2 ul > li {
+	background-image: url(/images/atari_tank_bullet.png);
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	list-style-type: none;
+	background-position: 0 6px;
+}

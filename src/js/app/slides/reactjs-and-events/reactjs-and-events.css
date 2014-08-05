@@ -1,0 +1,7 @@
+.events ul > li {
+	background-image: url(/images/SI_Bullet3.png);
+	background-repeat: no-repeat;
+	padding-left: 64px;
+	list-style-type: none;
+	background-position: 0 6px;
+}
