@@ -38,7 +38,7 @@ define([
                         <div className="slide-image complete-me">
                             <div className="eight-bit-type jsx">JSX</div>
                             <div className="eight-bit-type">You Complete Me</div>
-                            <img className="" src={this.props.imageDir + "galaga-complete-me.png"} />
+                            <img className="" src={this.props.imageDir + "galaga-complete-me2.png"} />
                         </div> :
                         <div className="bd">
                             <ul>
