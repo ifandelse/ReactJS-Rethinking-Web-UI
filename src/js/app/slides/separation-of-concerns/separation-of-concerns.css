@@ -1,0 +1,7 @@
+.soc li {
+	background-image: url(/images/defender_bullet1.png);
+	background-repeat: no-repeat;
+	padding-left: 45px;
+	background-position: 0 8px;
+	list-style-type: none;
+}	

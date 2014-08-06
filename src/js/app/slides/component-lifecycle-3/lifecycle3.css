@@ -1,0 +1,7 @@
+.lifecycle3 ul > li {
+	background-image: url(/images/pacman_bullet1.png);
+	background-repeat: no-repeat;
+	padding-left: 55px;
+	list-style-type: none;
+	background-position: 0 8px;
+}

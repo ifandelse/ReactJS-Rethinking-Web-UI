@@ -1,0 +1,178 @@
+{
+	"games": [
+		{
+			"name": "Maze War",
+			"description" : "Maze War is arguably the original first-person shooter. Created in 1973 by summer high school interns at NASA. Opponents hunted each other in a maze.",
+			"question" : {
+				"text": "What features is Maze Wars known for originating/disseminating?",
+				"choices" : [
+					"Avatars used to represent players",
+					"First peer-to-peer game",
+					"Had a level editor",
+					"Map showing player's position",
+					"All of the above"
+				],
+				"answer": [4],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"First game with a first-person 3D perspective",
+				"Was played across the ARPANET in 1977",
+				"Later additions/cheats added an observation only mode",
+				"Likely first internet-playable game in 1986"
+			],
+			"images" : [
+				"maze-war.png",
+				"mazewar-small.jpg"
+			]
+		},
+		{
+			"name" : "Spacewar!",
+			"description" : "One of the first digital computer games. Two players controlled a ship and tried to destroy each other.",
+			"question" : {
+				"text": "What year was 'Spacewar!' created?",
+				"choices" : ["1965", "1962", "1971"],
+				"answer": [1],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"Players had to maneuver to avoid a star in the center of the screen, which pulled ships towards it.",
+				"The first version took around 200 hours to complete.",
+				"Peter Samson was annoyed by lack of realism in the starfield and implemented an accurate representation.",
+				"Forty-five percent of the night sky was visible, showing all stars down to the fifth magnitude."
+			],
+			"images" : [
+				"spacewar2.jpg",
+				"spacewar.jpg"
+			]
+		},
+		{
+			"name" : "Pong",
+			"description" : "The first game developed by Atari, it was a 2-player digital table tennis game.",
+			"question" : {
+				"text": "Atari co-founder Nolan Bushnell assigned the creation of 'Pong' as a training exercise to:",
+				"choices" : ["Harold Lee", "Bob Brown", "Allan Alcorn"],
+				"answer": [2],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"Pong's controller paddles were unable to reach the top of screen. This was due to a circuit that had an inherent defect.",
+				"Atari was sued by Ralph Baer, the inventor of the Magnavox Odyssey, for patent infringement, as the Odyssey had a table tennis game.",
+				"Atari settled the infringement suit by accepting Magnavox's offer to become a licensee for $700k.",
+				"Arcade cabinets of Pong started production in 1972. They were being shipped to foreign countries by 1973."
+			],
+			"images" : [
+				"pong2.gif",
+				"AtariPong.png"
+			]
+		},
+		{
+			"name" : "Adventure",
+			"description" : "Built for the Atari 2600, a player must complete a quest for a magical chalice, while avoiding enemies: a thieving bat and three hungry dragons.",
+			"question" : {
+				"text": "True or False: with 'Adventure', Atari began officially crediting game authors for their work.",
+				"choices" : ["true", "false"],
+				"answer": [1],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"Adventure is known for the first 'easter egg', where Warren Robinett created a secret room crediting himself as the game author.",
+				"A 15-year-old discovered the easter egg and wrote Atari with instructions on how to retrieve it.",
+				"Realizing how expensive it would be to 'fix', Atari decided to call the hidden feature an 'easter egg' and promised more in upcoming games.",
+				"Adventure bucked the conventions around scoring and time limits, providing a much more ambitious experience given the technology of the time."
+			],
+			"images" : [
+				"adventure.jpg",
+				"Adventure3.jpg"
+			]
+		},
+		{
+			"name" : "Galaga",
+			"description" : "The sequel to Galaxian, Galaga was a 'fixed' shooter where the player, controlling a ship at the bottom of the screen, battles various enemy formations, with increasing difficulty over each level.",
+			"question" : {
+				"text": "Galaga suffered from a well known bug when transitioning from level 255 to 256. What kind of bug was it?",
+				"choices" : ["segfault", "integer overflow", "heap overflow"],
+				"answer": [1],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"Galaga was released in 1981.",
+				"An integer overflow bug caused players advancing from 255th round to encounter level 256 with *no* enemies.",
+				"Another game glitch, if exploited, could cause enemies to stop firing at you.",
+				"MGM sent a Galaga machine to Matthew Broderick so that he could practice playing before shooting the movie WarGames."
+			],
+			"images" : [
+				"galaga-animated.gif",
+				"galaga-logo.gif"
+			]
+		},
+		{
+			"name" : "Defender",
+			"description" : "A 2D shooter, where the player, controlling a ship, must protect astronauts by defeating waves of enemy ships.",
+			"question" : {
+				"text": "Defender has become one of the highest grossing arcade games ever, earning over:",
+				"choices" : [
+					"$1 billion",
+				 	"$500 million",
+				 	"$5 million"
+				],
+				"answer": [0],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"Defender was arguably the first horizontal scrolling game.",
+				"Defender is often cited as one of the most difficult games in the industry (for its day).",
+				"Longest play time was popularized by Steve Juraszek from Illinois, who claims to have played Defender for over 16.5 hours in 1982.",
+				"In 2002, a sequel to Defender was released with similar gameplay as the original, but utilizing modern 3D graphics."
+			],
+			"images" : [
+				"Defender.gif"
+			]
+		},
+		{
+			"name" : "Space Invaders",
+			"description" : "One of the earliest shooting games, where the player defeats waves of invading enemies.",
+			"question" : {
+				"text": "How long did the game's creator spend designing his own custom hardware and development tools to create the game?",
+				"choices" : [ "5 months", "Over 1 year", "2 years"],
+				"answer": [1],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"While programming the game, Nishikado discovered that the processor was able to render the alien graphics faster the fewer were on screen.",
+				"Rather than design the game to compensate for the speed increase, he decided to keep it as a challenging gameplay mechanic.",
+				"The game was originally called 'Space Monsters', but was changed to 'Space Invaders' by Nishikado's superiors",
+				"Space Invaders quadrupled the sales of the Atari 2600 in 1980, making it the first 'killer app' for game consoles."
+			],
+			"images" : [
+				"spaceinvader_animated.gif",
+				"Spaceinvaders2.png",
+				"Spaceinvaders3.jpg"
+			]
+		},
+		{
+			"name" : "Pac-Man",
+			"description" : "The iconic game of the early industry, players control Pac-Man in a maze, eating dots and fruit, while avoiding hostile ghosts.",
+			"question" : {
+				"text": "Pac-Man's original name was:",
+				"choices" : [
+					"Wakka-Wakka",
+					"Ghost Maze",
+					"Puck Man"
+				],
+				"answer": [2],
+				"userAnswer": null
+			},
+			"trivia" : [
+				"Pac-Man is the highest grossing video game of all time, surpassing $2.5 billion (in quarters!) by the mid-90s.",
+				"Similar to Galaga, Pac-Man has a 'kill screen' on level 256 due to an integer overflow bug.",
+				"Normally, no more than seven fruit are displayed at the bottom of the screen at any given time.",
+				"When the internal level counter (stored in a single byte – 8 bits), reaches 255, the subroutine that draws the fruit erroneously 'rolls over' this number to zero, causing it to draw 256 fruit instead of the usual 7."
+			],
+			"images" : [
+				"pacman2.gif",
+				"Pac-Man.png"
+			]
+		}
+	]
+}

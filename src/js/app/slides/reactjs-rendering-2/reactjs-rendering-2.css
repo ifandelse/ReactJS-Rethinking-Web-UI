@@ -1,0 +1,8 @@
+.reactjs-rendering-2 ul > li {
+	background-image: url(/images/adventure_bullet1.png);
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	list-style-type: none;
+	line-height: 2em;
+}
+

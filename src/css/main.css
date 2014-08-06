@@ -7,6 +7,10 @@ html, body {
     font-family: Oxygen, Lato, Helvetica, Arial;
 }
 
+body {
+    /*border: 1pt solid red;*/
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Oxygen, Lato, Helvetica, Arial;
 }
@@ -17,7 +21,7 @@ p {
 
 ul {
     text-align: left;
-    display: inline-block;
+    /*display: inline-block;*/
     margin: 0 5% 0 5%;
 }
 
@@ -25,6 +29,10 @@ aside {
     font-size: .5em;
     font-style: italic;
     color: dimgray;
+}
+
+.eight-bit-type {
+    font-family: 'Press Start 2P'
 }
 
 .presentation {
@@ -50,7 +58,11 @@ aside {
 .slide-headline-alt {
     color: #35aecc;
     font-style: italic;
-    text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+    text-shadow: rgb(224, 224, 224) 1px 1px 0;
+}
+
+.slide-children {
+    position:relative;
 }
 
 .slide-image {
@@ -58,6 +70,15 @@ aside {
     border-radius: 5px;
     border: 1pt solid dimgray;
     max-width: 100%;
+    max-height: 768px;
+}
+
+.slide-image-constrained-lg {
+    max-height: 650px;
+}
+
+.slide-image-constrained {
+    max-height: 500px;
 }
 
 .slide-image-fill {
@@ -66,6 +87,7 @@ aside {
 
 .slide-image-scrollable {
     overflow: scroll;
+    max-width: 100%;
 }
 
 .scroller {
@@ -74,6 +96,10 @@ aside {
     box-shadow: 10px 5px 5px #AC9C9C;
     border-radius: 5px;
     border: 1pt solid dimgray;
+}
+
+.scroller-lg {
+    height:650px;
 }
 
 .slide-content-alt {

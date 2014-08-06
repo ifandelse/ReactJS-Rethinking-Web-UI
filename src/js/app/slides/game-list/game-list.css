@@ -1,0 +1,48 @@
+.gamex-title {
+	font-size: 1.5em;
+	color: #000;
+	font-family: 'Oxygen';
+}
+
+.gamex-desc {
+	font-size: .7em;
+	width: 60%;
+	margin: 0 auto 0 auto;
+	color: dimgray;
+	text-shadow: none;
+	height: 150px;
+}
+
+.gamex-image {
+	max-height: 300px;
+}
+
+.gamex-inactive {
+	display: none;
+}
+
+.gamex-nav {
+	vertical-align: middle;
+	width: 25%;
+	color: #000;
+	margin: 0 1em 0 1em;
+}
+
+.gamex-nav:hover {
+	color: dimgray;
+}
+
+.gamex-nav i {
+	margin-right: 0;
+}
+
+.game-map-overlay {
+	width: 275px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 9999;
+    box-shadow: -5px 5px 5px #AC9C9C;
+    border-radius: 5px;
+    border:  1pt solid #1B1818;
+}

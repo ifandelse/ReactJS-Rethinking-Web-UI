@@ -1,0 +1,62 @@
+.title {
+	padding-top:0px;
+}
+
+.title-img {
+	width: 250px;
+	hight: 250px;
+}
+
+.title-8-bit {
+	font-family: "Press Start 2P";
+	font-size: 100px;
+	line-height: 1.95;
+}
+
+.sub-title-8-bit {
+	font-family: "Press Start 2P";
+	line-height: 2;
+}
+
+.title-normal {
+	font-family: "Oxygen";
+	font-size:90pt !important;
+	line-height: 1.1;
+}
+
+.sub-title-normal {
+	font-family: "Oxygen";
+	font-size:90px;
+	line-height: 1.1;
+}
+
+.static-overlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.static-img {
+	width:100%;
+	height:100%;
+}
+
+.player-img {
+	height: 100px;
+	background-color: hsla(210, 29%, 24%, 1);
+	border: 1pt solid hsla(210, 29%, 24%, 1);
+	padding: 3px;
+}
+
+.player {
+	font-size: 70px;
+	vertical-align: middle;
+	margin-left: .25em;
+    text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+}
+
+.two-player {
+	margin-left: 2em;
+}

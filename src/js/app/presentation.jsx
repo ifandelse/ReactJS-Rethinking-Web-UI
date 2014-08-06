@@ -10,10 +10,12 @@ define([
 
 	var slide = postal.channel("slide");
 	var router = postal.channel("router");
+	var navigation = postal.channel("navigation");
 
 	function changeSlidePosition(direction) {
 		var self = this;
 		var newPos;
+		this.direction = direction;
 		newPos = self.nextPos;
 		self.prevPos = self.currentPos;
 		if(newPos === undefined) {
@@ -38,11 +40,12 @@ define([
 		initialize: function() {
 			var self = this;
 			self.currentPos = 0;
-			Mousetrap.bind(['left', 'backspace'], function() {
-			    self.previous();
-			});
-			Mousetrap.bind(['right', 'space', 'enter'], function() {
-			    self.next();
+			navigation.subscribe("#", function(data, env){
+				if(data && data.cmd && self[data.cmd]) {
+					self[data.cmd]();
+				} else if (env.topic === "direction.request") {
+					env.reply({ direction: self.direction });
+				}
 			});
 			router.subscribe("slide.change", function(data){
 				self.handle("selectSlide", data.slideId);
@@ -54,11 +57,31 @@ define([
 		},
 
 		next: function() {
-			this.handle("nextSlide");
+			this.handle("next");
+		},
+
+		yield: function() {
+			this.handle("yield");
+		},
+
+		"yield.next": function() {
+			this.handle("yield.next");
+		},
+
+		"yield.previous": function() {
+			this.handle("yield.previous");
 		},
 
 		previous: function() {
-			this.handle("previousSlide");
+			this.handle("previous");
+		},
+
+		beginning: function() {
+			this.handle("selectSlide", 0);
+		},
+
+		ending: function() {
+			this.handle("selectSlide", presConfig.slides.length -1);
 		},
 
 		states: {
@@ -74,8 +97,9 @@ define([
 						this.renderCurrentSlide();
 					}
 				},
-				nextSlide: "advancing",
-				previousSlide: "rewinding",
+				next: "advancing",
+				previous: "rewinding",
+				yield: "yielding",
 				selectSlide: function(id) {
 					this.prevPos = this.currentPos;
 					this.nextPos = id;
@@ -83,6 +107,14 @@ define([
 				},
 				oopsGoBack: function(id) {
 					this.handle("selectSlide", id);
+				}
+			},
+			yielding: {
+				"yield.next" : "advancing",
+				"yield.previous" : "rewinding",
+				selectSlide: function() {
+					this.deferUntilTransition("viewing");
+					this.transition("viewing");
 				}
 			},
 			advancing: {

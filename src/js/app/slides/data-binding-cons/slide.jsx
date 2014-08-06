@@ -1,11 +1,12 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide"
+    "jsx!titledslide",
+    "css!./data-binding-cons.css"
 ], function(React, TitledSlide) {
     var Slide = React.createClass({
         render: function() {
-            return <TitledSlide classes="cons" title="Cons">
+            return <TitledSlide classes="cons" title="Drawbacks">
                 <ul className="spacey-lines slide-content-med-width">
                     <li>Tends towards cascading updates</li>
                     <li>Difficult to predict beyond simple scenarios</li>

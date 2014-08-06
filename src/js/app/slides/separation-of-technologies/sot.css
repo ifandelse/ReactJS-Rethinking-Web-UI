@@ -1,3 +1,11 @@
 .sot h2 {
 	color: #35aecc;
 }
+
+.sot li {
+	background-image: url(/images/galaga_bullet2.png);
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	background-position: 0 10px;
+	list-style-type: none;
+}

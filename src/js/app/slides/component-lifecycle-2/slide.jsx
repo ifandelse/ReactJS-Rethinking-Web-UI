@@ -1,11 +1,12 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!titledslide"
+    "jsx!titledslide",
+    "css!./lifecycle2.css"
 ], function(React, TitledSlide) {
     var Slide = React.createClass({
         render: function() {
-            return <TitledSlide classes="component-api2" title="Component Lifecycle Methods">
+            return <TitledSlide classes="lifecycle2" title="Component Lifecycle Methods">
                 <h2><code>componentwillReceiveProps</code></h2>
                 <ul>
                     <li>Called when a component is receiving new props.</li>

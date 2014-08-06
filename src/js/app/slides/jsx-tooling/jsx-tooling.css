@@ -1,0 +1,8 @@
+.jsx-tooling ul > li {
+	background-image: url(/images/pacman_bullet5.png);
+	background-repeat: no-repeat;
+	padding-left: 55px;
+	background-position: 0 7px;
+	line-height: 2em;
+	list-style-position: inside;
+}

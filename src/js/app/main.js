@@ -16,11 +16,14 @@ require.config( {
         mousetrap                 : "js/lib/mousetrap/mousetrap",
         postal                    : "js/lib/postal.js/lib/postal",
         "postal.request-response" : "js/lib/postal.request-response/lib/postal.request-response",
+        "postal.react"            : "js/lib/postal.react/postal.react",
         react                     : "js/lib/react/react-with-addons",
         "react.animate"           : "js/lib/react.animate/react.animate",
         text                      : "js/lib/requirejs-text/text",
         underscore                : "js/lib/underscore/underscore",
-        titledslide               : "js/app/components/TitledSlide"
+        titledslide               : "js/app/components/TitledSlide",
+        stepFsm                   : "js/app/stepFsm",
+        transitionManager         : "js/app/components/TransitionManager"
     },
 
     jsx: {
@@ -42,8 +45,10 @@ define( [
     "jsx!js/app/presentation",
     "js/app/router",
     "jquery",
-    "postal.request-response"
- ], function( Presentation, Router, $, postal ) {
+    "postal.request-response",
+    "react",
+    "js/app/postal.mousetrap"
+ ], function( Presentation, Router, $, postal, React ) {
 
     // We need to tell postal how to get a deferred instance
     postal.configuration.promise.createDeferred = function() {
@@ -53,6 +58,8 @@ define( [
     postal.configuration.promise.getPromise = function(dfd) {
         return dfd.promise();
     };
+
+    window.React = React;
 
     var presentation = new Presentation();
     $( function() {

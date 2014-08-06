@@ -1,10 +1,5 @@
-* You compose UIs with components
+* Write with Markup syntax (JSX) or JS
 * Components:
-  * can have `props` – which are immutable
-  * and `state` - which is mutable
-  * re-render everything on an update
-
- 
-?!
-
-##...wait...*everything?!* WAT?!##
+  * implement `render`
+  * can have `props` (immutable)
+  * and `state` (mutable)
