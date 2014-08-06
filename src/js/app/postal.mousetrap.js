@@ -20,4 +20,12 @@ define([
     	channel.publish("ending", { cmd: "ending" });
 	});
 
+	Mousetrap.bind('alt+left', function(e) {
+    	channel.publish("previous", { cmd: "yield.previous" });
+	});
+
+	Mousetrap.bind('alt+right', function(e) {
+    	channel.publish("next", { cmd: "yield.next" });
+	});
+
 });

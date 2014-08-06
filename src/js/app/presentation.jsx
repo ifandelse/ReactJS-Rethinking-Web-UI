@@ -99,6 +99,8 @@ define([
 				},
 				next: "advancing",
 				previous: "rewinding",
+				"yield.next" : "advancing",
+				"yield.previous" : "rewinding",
 				yield: "yielding",
 				selectSlide: function(id) {
 					this.prevPos = this.currentPos;

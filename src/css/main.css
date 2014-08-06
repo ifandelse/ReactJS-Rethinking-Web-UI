@@ -85,6 +85,10 @@ aside {
     width: 100%;
 }
 
+.slide-image-white {
+    background-color: #fff;
+}
+
 .slide-image-scrollable {
     overflow: scroll;
     max-width: 100%;
