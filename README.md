@@ -19,7 +19,7 @@ I love the web - and I love JavaScript. However, as much of an OSS geek I've bee
 For some reason, I thought it would be fun to build this presentation *in* React. This started when I wanted to just include embedded examples in my slide deck....and then I thought "I know, I'll just make my slides components, too". All that to say...it's not exactly a shining example of "Hey! Go model your React project after my slide deck". *Please don't*. There are rough spots. I used a ton of brute force to make things happen. But I got to spend a lot of time playing with low level stuff, and that was a win. If you catch something I've missed, please tell me!
 
 ##Further Reading
-For anyone that comes across this repo (and especially those who attended the presentation), please let me direct you to the numerous giants upon whose shoulders I stand. The people and posts below are liberally quoted & referenced both in the actual slide content as well as what I typicall say as I go through the presentation. In many ways this presentation is simply my own attempt to flatter each of them by imitation.
+For anyone that comes across this repo (and especially those who attended the presentation), please let me direct you to the numerous giants upon whose shoulders I stand. The people and posts below are liberally quoted & referenced both in the actual slide content as well as what I typically say as I go through the presentation. In many ways this presentation is simply my own attempt to flatter each of them by imitation.
 
 * [ReactJS Site](http://facebook.github.io/react/index.html)
 * [ReactJS - Complementary Tools Wiki Page](https://github.com/facebook/react/wiki/Complementary-Tools)
