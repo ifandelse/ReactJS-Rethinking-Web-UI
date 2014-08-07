@@ -49,7 +49,7 @@ define([
         { image: "gamelist18.png" },
         { image: "gamelist19.png" },
         { image: "gamelist20.png" },
-        { image: "gamelist21.png", label: "Updating the GameList" }
+        { image: "gamelist21.png", label: "Updating the GameList", overlay: "map_gameList.png" }
     ];
 
     function produceSteps(states) {

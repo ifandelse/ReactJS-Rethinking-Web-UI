@@ -40,11 +40,11 @@ define([
                                     self.animating = false;
                                     setTimeout(function(){
                                         self.animateTransition();
-                                    },_.random(4000, 7000));
+                                    },_.random(3000, 6000));
                                 });
                             });
                         });
-                    }, _.random(4000, 7000));
+                    }, _.random(3000, 6000));
                 }
             },
 

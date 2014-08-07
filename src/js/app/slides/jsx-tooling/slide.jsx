@@ -11,8 +11,8 @@ define([
 
                 <ul>
                     <li>Include the <code>JSXTransformer.js</code> file in your page</li>
-                    <li>Source your JSX file(s) with a script <code>type</code> of <code>text/jsx</code></li>
-                    <li>Include <code>/** @jsx React.DOM */</code> at the top of your jsx files</li>
+                    <li>Source JSX file(s) with a script <code>type</code> of <code>text/jsx</code></li>
+                    <li>Include <code>/** @jsx React.DOM */</code> at top of files</li>
                     <li>Don't do this in production. Kittens die.</li>
                 </ul>
 

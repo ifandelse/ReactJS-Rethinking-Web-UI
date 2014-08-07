@@ -39,7 +39,7 @@ define([
 
         render: function() {
             return <TitledSlide>
-                  <img src={this.props.imageDir + this.state.image} className="slide-image slide-image-fill animated fadeIn" />
+                  <img src={this.props.imageDir + this.state.image} className="slide-image slide-image-fill slide-image-white animated fadeIn" />
               </TitledSlide>;
        }
     });
