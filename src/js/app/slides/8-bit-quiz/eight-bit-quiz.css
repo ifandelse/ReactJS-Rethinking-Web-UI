@@ -62,6 +62,7 @@ the kind of thing I hope to forget I ever did. :-) */
     -o-transition: max-height .5s ease;
     transition: max-height .5s ease;
     max-height: 300px;
+    cursor: pointer;
 }
 
 .quiz-image-small {
