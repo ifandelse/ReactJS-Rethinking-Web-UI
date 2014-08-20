@@ -8,15 +8,21 @@ While preparing for Devlink, I wandered down a VERY fun rabbit trail researching
 The initial "let's build a component" walkthrough covers building just part of what landed in the demo (there's a partial demo of it after the code walk through, but the full demo is at the end of the slide deck). In the demo, you can cycle through 8 different games to see a description and trivia, and if you click on one of the pictures, it will open a trivia question about the game.
 
 ##The 'How'
-Clone this repo, and run `npm install` from the root. Then run `npm start`. If `open` doesn't open a browser window for you, open one to <http://localhost:3080>. Use the left and right arrow keys to navigate through the presentation (focus has to be on the page for the arrow keys to work). I've only
-tested this presentation in Chrome - but odds are it will work fine in Safari and Firefox. No idea about
-IE. I often boot my windows VM just to intentionally neglect it.
+Clone this repo, and run `npm install` from the root. Then run `npm start`. If `open` doesn't open a browser window for you, open one to <http://localhost:3080>. I've only tested this presentation in Chrome - but odds are it will work fine in Safari and Firefox. No idea about IE. I often boot my windows VM just to intentionally neglect it.
+
+###Navigation Controls:
+
+* Left and Right Arrow keys step one slide/frame at a time. (You can also use backspace and enter instead of left/right arrow, respectively.)
+* Some slides have multiple frames. You can skip between actual slides (skipping sub frames) by pressing `alt` while using left/right arrows.
+* Skip to the beginning or end of the deck by pressing `cntrl+alt` and using the left/right arrow keys.
+
+**IMPORTANT: Focus has to be on the page for the key navigation to work.**
 
 ##The 'Why'
 I love the web - and I love JavaScript. However, as much of an OSS geek I've been – and as excited as I've been by the promises made my client-side frameworks – my hopes have been constantly dashed against the rocks. ReactJS is the first time my thinking about how UI should be done has been radically challenged and changed. I'm the most excited I've been about client-side UI in *years*, thanks to ReactJS.
 
 ##The Caveats
-For some reason, I thought it would be fun to build this presentation *in* React. This started when I wanted to just include embedded examples in my slide deck....and then I thought "I know, I'll just make my slides components, too". All that to say...it's not exactly a shining example of "Hey! Go model your React project after my slide deck". *Please don't*. There are rough spots. I used a ton of brute force to make things happen. But I got to spend a lot of time playing with low level stuff, and that was a win. If you catch something I've missed, please tell me!
+For some reason, I thought it would be fun to build this presentation *in* React. This started when I wanted to just include embedded examples in my slide deck....and then I thought "I know, I'll just make my slides components, too". All that to say...it's *not* exactly a shining example of "Hey! Go model your React project after my slide deck". *Please don't*. There are rough spots. I used a ton of brute force to make things happen. But I got to spend a lot of time playing with low level stuff, and that was a win. If you catch something I've missed, please tell me!
 
 ##Further Reading
 For anyone that comes across this repo (and especially those who attended the presentation), please let me direct you to the numerous giants upon whose shoulders I stand. The people and posts below are liberally quoted & referenced both in the actual slide content as well as what I typically say as I go through the presentation. In many ways this presentation is simply my own attempt to flatter each of them by imitation.
