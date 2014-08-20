@@ -23,7 +23,8 @@ require.config( {
         underscore                : "js/lib/underscore/underscore",
         titledslide               : "js/app/components/TitledSlide",
         stepFsm                   : "js/app/stepFsm",
-        transitionManager         : "js/app/components/TransitionManager"
+        transitionManager         : "js/app/components/TransitionManager",
+        kendo                     : "js/lib/kendo/kendo.all.min"
     },
 
     jsx: {

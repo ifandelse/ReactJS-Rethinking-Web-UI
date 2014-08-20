@@ -15,6 +15,7 @@ define([
     var Slide = React.createClass({
         render: function() {
             return <TitledSlide classes="dev-tools" title="Let's Build One">
+                <aside>(gradually-ish)</aside>
             	<GameExample name={galaga.name} description={galaga.description} image={galaga.image} />
             </TitledSlide>;
        }

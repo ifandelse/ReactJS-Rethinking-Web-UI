@@ -2,4 +2,4 @@
 * Components:
   * implement `render`
   * can have `props` (immutable)
-  * and `state` (mutable)
+  * and `state` (can be mutated)

@@ -1,0 +1,13 @@
+.game-list-2 h1 {
+	font-size: 1em;
+}
+.game-list-2 .game2-map-overlay {
+	width: 275px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 9999;
+    box-shadow: -5px 5px 5px #AC9C9C;
+    border-radius: 5px;
+    border:  1pt solid #1B1818;
+}
