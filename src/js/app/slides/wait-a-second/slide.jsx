@@ -9,9 +9,9 @@ define([
                 <div className="">
                     <img className="slide-image appeal-img" src={this.props.imageDir + "docbrown.jpg"} />  
                 </div> 
-                <div className="bd">
-                    You rendered all the games to the DOM<br/>when you didn't need to?!
-                </div> 
+                <h2 className="slide-headline">
+                    You rendered all the games to the DOM when you didn't need to?!
+                </h2> 
             </TitledSlide>;
        }
     });
