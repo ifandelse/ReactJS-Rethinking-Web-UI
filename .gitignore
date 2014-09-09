@@ -13,9 +13,5 @@ obj
 _ReSharper*
 *.ReSharper.user
 *.ReSharper
-desktop.ini
-.eprj
 report/
 bower/
-src/js/app/slides/.DS_Store
-src/js/.DS_Store
